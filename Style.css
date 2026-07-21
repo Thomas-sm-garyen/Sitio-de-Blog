@@ -1,70 +1,72 @@
+/* VARIABLES DE COLOR (tema oscuro) */
+:root {
+    --bg-principal: #121212;
+    --bg-tarjeta: #1e1e1e;
+    --texto-principal: #ffffff;
+    --texto-secundario: #b3b3b3;
+    --color-acento: #1db954;
+}
+
+/* RESET BÁSICO */
+body {
+    background-color: var(--bg-principal);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* SECCIÓN NOSOTROS */
 #nosotros {
     background-color: var(--bg-tarjeta);
-    border-radius: 8px;
-    padding: 24px;
-}
-
-/* Contenedor del texto */
-#nosotros .contenido {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#nosotros h2, 
-#nosotros h3 {
-    text-align: center;
-}
-
-#nosotros p {
-    color: var(--texto-secundario);
-    font-size: 1rem;
-    margin-bottom: 16px;
-    line-height: 1.6;
-}
-
-/* Imágenes centradas y con espacio */
-#nosotros img {
-    width: 100%;
-    max-width: 500px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 6px;
-}
-
-#nosotros {
-    background-color: var(--bg-tarjeta);
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 40px 20px;
-    text-align: center;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Contenedor del texto */
+/* CONTENEDOR DE TEXTO */
 #nosotros .contenido {
     max-width: 700px;
     margin: 0 auto;
-}
-
-/* Centrar títulos */
-#nosotros h2,
-#nosotros h3 {
     text-align: center;
 }
 
-/* Párrafos bien organizados */
+/* TÍTULO PRINCIPAL */
+#nosotros h2 {
+    color: var(--color-acento);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* SUBTÍTULO */
+#nosotros h3 {
+    color: var(--texto-principal);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* PÁRRAFOS */
 #nosotros p {
     color: var(--texto-secundario);
     font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 20px;
-    text-align: center;
 }
 
-/* Imágenes */
+/* IMÁGENES */
 #nosotros img {
     width: 100%;
     max-width: 600px;
+    height: auto;
     display: block;
     margin: 25px auto;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* EFECTO HOVER (opcional, se ve pro 😎) */
+#nosotros img:hover {
+    transform: scale(1.03);
 }
