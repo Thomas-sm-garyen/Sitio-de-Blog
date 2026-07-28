@@ -1,30 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog Musical</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="styles1.css">
+
+</head>
+
+<body class="nosotros-page">
+
+
+<header class="text-center py-5">
+    
+    
+
+    <h1 class="display-4">
+        Conoce nuestro mundo musical
+    </h1>
+
+
+    <p class="lead">
+        Un espacio creado para compartir historias, artistas
+        y sonidos que han dejado huella.
+    </p>
+
+
+    <nav class="d-flex justify-content-center gap-3 flex-wrap">
+
+
+        <a href="#nosotros" class="btn btn-dark rounded-pill px-4">
+            Nosotros
+        </a>
+
+
+        <a href="#valores" class="btn btn-dark rounded-pill px-4">
+            Nuestra esencia
+        </a>
+        
+    </nav>
+</header>
+
+<main class="container py-5">
+
 <section id="nosotros">
 
-    <h2>Sobre Nosotros</h2>
+<h2 class="text-center mb-5">
+    Sobre Nosotros
+</h2>
 
-    <img src="equipo.jpg" alt="Equipo creador del blog musical">
+<div class="row align-items-center g-4">
 
-    <p>
-        Somos un blog musical creado por un equipo apasionado por la música,
-        donde compartimos la historia, evolución y grandes exponentes de
-        diferentes géneros musicales.
-    </p>
+    <div class="col-md-6">
 
-    <p>
-        Nuestro objetivo es conectar a los amantes de la música con artistas,
-        canciones y culturas que han marcado generaciones.
-    </p>
+        <div id="carruselEquipo" 
+        class="carousel slide" 
+        data-bs-ride="carousel">
 
-    <img src="instrumentos.jpeg" alt="Instrumentos musicales que representan lapasión por la música">
+            <div class="carousel-indicators">
 
-    <h3>Nuestra comunidad musical</h3>
+                <button type="button" 
+                data-bs-target="#carruselEquipo" 
+                data-bs-slide-to="0" 
+                class="active">
+                </button>
 
-    <p>
-        En nuestro blog encontrarás contenido sobre Pop, Rock y Música Urbana,
-        destacando artistas reconocidos, sus trayectorias y canciones más
-        importantes.
-    </p>
 
-    <img src="concierto.jpeg" alt="Personas disfrutando la música en un concierto">
+                <button type="button" 
+                data-bs-target="#carruselEquipo" 
+                data-bs-slide-to="1">
+                </button>
+
+
+                <button type="button" 
+                data-bs-target="#carruselEquipo" 
+                data-bs-slide-to="2">
+                </button>
+
+            </div>
+
+            <div class="carousel-inner rounded">
+
+                <div class="carousel-item active">
+
+                    <img src="equipo.jpg"
+                    class="d-block w-100"
+                    alt="Equipo creador">
+
+                </div>
+
+                <div class="carousel-item">
+
+
+                    <img src="instrumentos1.jpeg"
+                    class="d-block w-100"
+                    alt="Instrumentos musicales">
+
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <img src="cantante.jpg"
+                    class="d-block w-100"
+                    alt="Música">
+
+                </div>
+
+            </div>
+            
+            <button class="carousel-control-prev" 
+            type="button" 
+            data-bs-target="#carruselEquipo" 
+            data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+
+            </button>            
+
+
+            <button class="carousel-control-next" 
+            type="button" 
+            data-bs-target="#carruselEquipo" 
+            data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+        </div>
+
+
+    </div>
+
+    <div class="col-md-6">
+
+
+    <div class="p-4">
+
+
+        <h3 class="mb-3">
+            Nuestra historia
+        </h3>
+
+        <p>
+            Somos un blog musical creado por un equipo apasionado
+            por la música, donde compartimos historias, artistas y
+            géneros que han marcado diferentes generaciones.
+        </p>
+
+
+        <p>
+            Nuestro objetivo es conectar a los amantes de la música
+            con canciones, culturas y experiencias que transmiten
+            emociones.
+        </p>
+
+        </div>
+
+    </div>
+</div>
+
+</div>
 
 </section>
+
+<section id="valores" class="mt-5">
+
+<h2 class="text-center mb-5">
+    Nuestra esencia
+</h2>
+
+<div class="row g-4">
+
+    <div class="col-md-4">
+
+        <div class="card h-100 p-4 text-center">
+
+            <h3>
+                🎵 Pasión musical
+            </h3>
+
+            <p>
+                Exploramos artistas y canciones con historias
+                que inspiran y conectan generaciones.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card h-100 p-4 text-center">
+
+            <h3>
+                🌎 Diversidad
+            </h3>
+
+            <p>
+                Compartimos diferentes géneros musicales,
+                culturas y estilos alrededor del mundo.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100 p-4 text-center">
+            <h3>
+                🎧 Comunidad
+            </h3>
+            <p>
+                Creamos un espacio para amantes de la música
+                donde pueden descubrir nuevos sonidos.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<section id="generos" class="mt-5">
+    
+</div>
+
+</section>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+
+</html>
