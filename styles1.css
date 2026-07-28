@@ -1,0 +1,79 @@
+
+.nosotros-page {
+    background-color: #000000; 
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+
+.nosotros-page h1,
+.nosotros-page h2,
+.nosotros-page h3 {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+
+.nosotros-page p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.nosotros-page header {
+    background: linear-gradient(90deg, #000000, #1a1a1a);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+.nosotros-page .card {
+    background-color: #111111;
+    border: 1px solid #ff8800; 
+    border-radius: 15px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+
+.nosotros-page .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px #ff8800;
+}
+
+
+.nosotros-page .btn {
+    background-color: #ff8800; /* naranja */
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nosotros-page .btn:hover {
+    background-color: #ffcc00; 
+    color: black;
+}
+
+
+.nosotros-page .carousel-item img {
+    border-radius: 10px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.nosotros-page footer {
+    background-color: #000000;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.nosotros-page a {
+color: #ffcc00;
+}
+
+.nosotros-page a:hover {
+color: #ff8800;
+}
