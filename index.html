@@ -4,131 +4,568 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Artistas de Pop, Rock y Género Urbano</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./Styles/index.css">
 
 </head>
 
-<body>
-    <header>
-        <h1>Música: Pop, Rock y Género Urbano</h1>
-        <p>Bienvenido a nuestra página sobre grandes exponentes de la música.</p>
+<body class="bg-light">
 
-        <nav class="menu-principal" aria-label="Menú principal">
-            <ul class="lista-menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Quiénes Somos</a></li>
-                <li><a href="contactanos.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold text-warning" href="#">
+                MusicBlog
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">
+                            Quiénes Somos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactanos.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <header class="hero text-white text-center d-flex align-items-center">
+
+        <div class="container">
+
+            <h1 class="display-3 fw-bold">
+
+                Música:
+                <span class="text-warning">
+                    Pop, Rock y Género Urbano
+                </span>
+
+            </h1>
+
+            <p class="lead mt-4">
+
+                Descubre algunos de los artistas más importantes
+                que marcaron la historia de la música.
+
+            </p>
+
+            <a href="#pop" class="btn btn-warning btn-lg mt-3">
+
+                Ver Artistas
+
+            </a>
+
+        </div>
+
     </header>
 
-    <main>
+    <!-- ================= POP ================= -->
 
-        <section id="pop">
-            <h2>Pop</h2>
+    <section class="container py-5" id="pop">
 
-            <article>
-                <h3>Michael Jackson</h3>
-                <p>Conocido como el "Rey del Pop", fue un cantante, compositor y bailarín estadounidense que revolucionó
-                    la industria de la música.</p>
+        <h2 class="text-center text-warning fw-bold mb-5">
 
-                <img src="Imagenes/jackson_michael_1.jpg" alt="Michael Grabando Speed Demon">
-                <img src="Imagenes/michael_2.avif" alt="Michael en premios ">
-                <h4>Canciones destacadas:</h4>
+            POP
 
-                <ul>
-                    <li>Thriller</li>
-                    <li>Billie Jean</li>
-                    <li>Beat It</li>
-                </ul>
-            </article>
+        </h2>
 
+        <div class="row g-4">
 
-            <article>
-                <h3>Madonna</h3>
-                <p>Conocida como la "Reina del Pop", es una cantante, bailarina y empresaria estadounidense referente en
-                    la reinvención musical.</p>
-                <img src="Imagenes/madona_1.jpg" alt="Madona">
-                <img src="Imagenes/madonna_2.jpg" alt="Madona">
-                <h4>Canciones destacadas:</h4>
-                <ul>
-                    <li>Like a Prayer</li>
-                    <li>Vogue</li>
-                    <li>Hung Up</li>
-                </ul>
-            </article>
-        </section>
+            <!-- Michael -->
 
-        <section id="rock">
-            <h2>Rock</h2>
-            <article>
-                <h3>Queen</h3>
-                <p>Banda británica de rock formada en 1970 en Londres, conocida por su gran diversidad musical y
-                    espectáculos multitudinarios.</p>
-                <img src="Imagenes/queen1.jpg" alt="Queen">
-                <img src="Imagenes/queen2.jpg" alt="Freddy Mercurie">
-                <h4>Canciones destacadas:</h4>
-                <ul>
-                    <li>Bohemian Rhapsody</li>
-                    <li>Don't Stop Me Now</li>
-                    <li>We Will Rock You</li>
-                </ul>
-            </article>
+            <div class="col-lg-6">
 
+                <div class="card shadow-lg h-100 border-0">
 
-            <article>
-                <h3>The Beatles</h3>
-                <p>Banda de rock británica formada en Liverpool durante los años 1960, considerada la más influyente de
-                    la historia.</p>
-                <img src="Imagenes/Thebeatles1.webp" alt="Beatles">
-                <img src="Imagenes/thebeatles2.jpg" alt="Beatles">
-                <h4>Canciones destacadas:</h4>
-                <ul>
-                    <li>Hey Jude</li>
-                    <li>Let It Be</li>
-                    <li>Yesterday</li>
-                </ul>
-            </article>
-        </section>
+                    <img src="Imagenes/jackson_michael_1.jpg"
+                        class="card-img-top"
+                        alt="Michael Jackson">
 
-        <section id="urbano">
-            <h2>Género Urbano</h2>
-            <article>
-                <h3>Don Omar</h3>
-                <p>Cantante y actor puertorriqueño, uno de los referentes e íconos más importantes en la historia del
-                    reggaetón.</p>
-                <img src="Imagenes/don omar1.jpg" alt="Don Omar">
-                <img src="Imagenes/Don omar2.jpg" alt="Don Omar">
-                <h4>Canciones destacadas:</h4>
-                <ul>
-                    <li>Danza Kuduro</li>
-                    <li>Salió El Sol</li>
-                    <li>Dile</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Daddy Yankee</h3>
+                    <div class="card-body">
 
-                <p>Considerado el "Rey del Reggaetón", fue un cantante y productor puertorriqueño que popularizó el
-                    género a nivel mundial.</p>
-                <img src="Imagenes/daddy_yankee1.jpg" alt="Daddy Yankee">
-                <img src="Imagenes/daddy yankee2.webp" alt="Daddy Yankee">
-                <h4>Canciones destacadas:</h4>
-                <ul>
-                    <li>Gasolina</li>
-                    <li>Despacito</li>
-                    <li>Con Calma</li>
-                </ul>
-            </article>
-        </section>
-        <footer>
-            <p><strong>Proyecto:</strong> Sitio de Blog</p>
-            <p><strong>Autores:</strong> Thomas, Andrés y equipo</p>
-            <p><strong>Contacto:</strong> correo@ejemplo.com</p>
-        </footer>
+                        <h3 class="card-title">
 
-    </main>
+                            Michael Jackson
+
+                        </h3>
+
+                        <p class="card-text">
+
+                            Conocido como el Rey del Pop, revolucionó la
+                            industria musical gracias a su talento como
+                            cantante, compositor y bailarín.
+
+                        </p>
+
+                        <div class="row">
+
+                            <div class="col-6">
+
+                                <img src="Imagenes/michael_2.avif"
+                                    class="img-fluid rounded">
+
+                            </div>
+
+                            <div class="col-6">
+
+                                <ul class="list-group">
+
+                                    <li class="list-group-item">
+                                        Thriller
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        Billie Jean
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        Beat It
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Madonna -->
+
+            <div class="col-lg-6">
+
+                <div class="card shadow-lg h-100 border-0">
+
+                    <img src="Imagenes/madona_1.jpg"
+                        class="card-img-top"
+                        alt="Madonna">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+
+                            Madonna
+
+                        </h3>
+
+                        <p class="card-text">
+
+                            La Reina del Pop, reconocida por reinventarse
+                            constantemente y mantenerse vigente durante
+                            varias décadas.
+
+                        </p>
+
+                        <div class="row">
+
+                            <div class="col-6">
+
+                                <img src="Imagenes/madonna_2.jpg"
+                                    class="img-fluid rounded">
+
+                            </div>
+
+                            <div class="col-6">
+
+                                <ul class="list-group">
+
+                                    <li class="list-group-item">
+                                        Like a Prayer
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        Vogue
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        Hung Up
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+        <!-- ================= ROCK ================= -->
+
+    <section class="container py-5" id="rock">
+
+        <h2 class="text-center text-warning fw-bold mb-5">
+            ROCK
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- Queen -->
+
+            <div class="col-lg-6">
+
+                <div class="card shadow-lg h-100 border-0">
+
+                    <img src="Imagenes/queen1.jpg"
+                        class="card-img-top"
+                        alt="Queen">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            Queen
+                        </h3>
+
+                        <p class="card-text">
+
+                            Banda británica de rock formada en 1970,
+                            reconocida por su gran talento musical y por
+                            sus espectáculos en vivo.
+
+                        </p>
+
+                        <div class="row">
+
+                            <div class="col-6">
+
+                                <img src="Imagenes/queen2.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Freddie Mercury">
+
+                            </div>
+
+                            <div class="col-6">
+
+                                <ul class="list-group">
+
+                                    <li class="list-group-item">
+                                        Bohemian Rhapsody
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        Don't Stop Me Now
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        We Will Rock You
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Beatles -->
+
+            <div class="col-lg-6">
+
+                <div class="card shadow-lg h-100 border-0">
+
+                    <img src="Imagenes/Thebeatles1.webp"
+                        class="card-img-top"
+                        alt="The Beatles">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            The Beatles
+                        </h3>
+
+                        <p class="card-text">
+
+                            Considerada una de las bandas más importantes
+                            e influyentes de todos los tiempos.
+
+                        </p>
+
+                        <div class="row">
+
+                            <div class="col-6">
+
+                                <img src="Imagenes/thebeatles2.jpg"
+                                    class="img-fluid rounded"
+                                    alt="The Beatles">
+
+                            </div>
+
+                            <div class="col-6">
+
+                                <ul class="list-group">
+
+                                    <li class="list-group-item">
+                                        Hey Jude
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        Let It Be
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        Yesterday
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= GÉNERO URBANO ================= -->
+
+    <section class="container py-5" id="urbano">
+
+        <h2 class="text-center text-warning fw-bold mb-5">
+            GÉNERO URBANO
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- Don Omar -->
+
+            <div class="col-lg-6">
+
+                <div class="card shadow-lg h-100 border-0">
+
+                    <img src="Imagenes/don omar1.jpg"
+                        class="card-img-top"
+                        alt="Don Omar">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            Don Omar
+                        </h3>
+
+                        <p class="card-text">
+
+                            Uno de los mayores exponentes del reguetón,
+                            reconocido por su estilo y trayectoria.
+
+                        </p>
+
+                        <div class="row">
+
+                            <div class="col-6">
+
+                                <img src="Imagenes/Don omar2.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Don Omar">
+
+                            </div>
+
+                            <div class="col-6">
+
+                                <ul class="list-group">
+
+                                    <li class="list-group-item">
+                                        Danza Kuduro
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        Salió El Sol
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        Dile
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Daddy Yankee -->
+
+            <div class="col-lg-6">
+
+                <div class="card shadow-lg h-100 border-0">
+
+                    <img src="Imagenes/daddy_yankee1.jpg"
+                        class="card-img-top"
+                        alt="Daddy Yankee">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            Daddy Yankee
+                        </h3>
+
+                        <p class="card-text">
+
+                            Considerado el Rey del Reggaetón por su gran
+                            influencia en la expansión mundial del género.
+
+                        </p>
+
+                        <div class="row">
+
+                            <div class="col-6">
+
+                                <img src="Imagenes/daddy yankee2.webp"
+                                    class="img-fluid rounded"
+                                    alt="Daddy Yankee">
+
+                            </div>
+
+                            <div class="col-6">
+
+                                <ul class="list-group">
+
+                                    <li class="list-group-item">
+                                        Gasolina
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        Despacito
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        Con Calma
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-dark text-white mt-5 py-5">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <h4 class="text-warning">
+                        MusicBlog
+                    </h4>
+
+                    <p>
+                        Sitio dedicado a grandes artistas del Pop,
+                        Rock y Género Urbano.
+                    </p>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <h4 class="text-warning">
+                        Proyecto
+                    </h4>
+
+                    <p>Sitio Web</p>
+
+                    <p>Jasbleydy, Thomas, Martha, David y Andres</p>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <h4 class="text-warning">
+                        Contacto
+                    </h4>
+
+                    <p>artistas@colombia.com</p>
+
+                    <p>© 2026 Todos los derechos reservados.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
